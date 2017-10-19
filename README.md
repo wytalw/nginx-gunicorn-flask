@@ -3,10 +3,16 @@
 This repository contains files necessary for building a Docker image of
 Nginx + Gunicorn + Flask.
 
+###changes:
+    +using official python image[https://hub.docker.com/r/_/python/]
+    +run by docker-compose
+    +mount codes by -v
+    +mount 3 .conf files by -v for nginx gunicorn supervisord
+
 
 ### Base Docker Image
 
-* [ubuntu:12.04](https://registry.hub.docker.com/_/ubuntu/)
+* python
 
 
 ### Installation
@@ -22,8 +28,8 @@ docker pull danriti/nginx-gunicorn-flask
 
 ### Usage
 
-```bash
-docker run -d -p 80:80 danriti/nginx-gunicorn-flask
+```run py docker-compose
+
 ```
 
 After few seconds, open `http://<host>` to see the Flask app.

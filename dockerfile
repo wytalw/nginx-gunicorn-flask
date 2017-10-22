@@ -2,7 +2,7 @@
 
 FROM python
 LABEL author="xuqinghan"
-LABEL purpose = 'housebook'
+LABEL purpose = ''
 
 
 RUN apt update

@@ -5,7 +5,7 @@ services:
     #restart: always
     stdin_open: true
     tty: true
-    build: ./dockerfile
+    build: .
     image: nginx-gunicorn-flask:latest
     volumes:
       - ./app:/deploy/app

@@ -6,7 +6,8 @@ services:
     stdin_open: true
     tty: true
     build: .
-    image: nginx-gunicorn-flask:latest
+    #image: nginx-gunicorn-flask:latest
+    image: registry.cn-qingdao.aliyuncs.com/nlp_wmx/nginx_flask:1.0.0
     volumes:
       - ./app:/deploy/app
       - ./nginx_flask.conf:/etc/nginx/sites-available/nginx_flask.conf

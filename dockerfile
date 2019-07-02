@@ -8,6 +8,7 @@ LABEL purpose = ''
 RUN apt update
 RUN apt install -y nginx supervisor
 RUN pip3 install gunicorn
+RUN pip3 install gevent
 RUN pip3 install setuptools
 
 ENV PYTHONIOENCODING=utf-8

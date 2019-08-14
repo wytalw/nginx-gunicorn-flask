@@ -1,0 +1,10 @@
+APScheduler==3.6.0
+bert-serving-client==1.9.6
+bert-serving-server==1.9.6
+Flask==1.0.3
+jieba==0.39
+numpy==1.16.4
+pandas==0.24.2
+PyMySQL==0.9.3
+elasticsearch==7.0.2
+pycryptodome==3.8.2

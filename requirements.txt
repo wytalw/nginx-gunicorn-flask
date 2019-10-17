@@ -8,3 +8,4 @@ pandas==0.24.2
 PyMySQL==0.9.3
 elasticsearch==7.0.2
 pycryptodome==3.8.2
+faiss-cpu==1.6.0

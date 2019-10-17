@@ -1,8 +1,8 @@
 # nginx-gunicorn-flask with python3
 
 FROM python
-LABEL author="xuqinghan"
-LABEL purpose = ''
+LABEL author="wmx"
+LABEL purpose = 'ai answer'
 
 
 RUN apt update
@@ -19,7 +19,7 @@ WORKDIR /deploy/app
 #only copy requirements.txt.  othors will be mounted by -v
 COPY app/requirements.txt /deploy/app/requirements.txt
 RUN pip3 install -r /deploy/app/requirements.txt
-RUN pip3 install faiss-cpu==1.6.0
+RUN pip3 install faiss-cpu == 1.6.0
 # Setup nginx
 RUN rm /etc/nginx/sites-enabled/default
 COPY nginx_flask.conf /etc/nginx/sites-available/

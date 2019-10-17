@@ -20,7 +20,7 @@ WORKDIR /deploy/app
 COPY app/requirements.txt /deploy/app/requirements.txt
 RUN pip3 install -r /deploy/app/requirements.txt
 
-RUN pip3 install faiss-cpu == 1.6.0
+#RUN pip3 install faiss-cpu == 1.6.0
 # Setup nginx
 RUN rm /etc/nginx/sites-enabled/default
 COPY nginx_flask.conf /etc/nginx/sites-available/

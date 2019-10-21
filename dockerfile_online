@@ -3,7 +3,7 @@ LABEL author="wmx"
 
 RUN apt update
 
-RUN conda install faiss-cpu=1.6.0 -c pytorch -y
+RUN conda install faiss-cpu -c pytorch -y
 
 RUN apt install -y nginx supervisor
 RUN pip install gunicorn  -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com

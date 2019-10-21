@@ -21,7 +21,6 @@ RUN mkdir -p /deploy/app
 WORKDIR /deploy/app
 COPY requirements.txt /deploy/app/requirements.txt
 RUN pip install -r /deploy/app/requirements.txt  -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
-RUN pip install faiss-cpu==1.6.0
 # Setup nginx
 RUN rm /etc/nginx/sites-enabled/default
 COPY nginx_flask.conf /etc/nginx/sites-available/
